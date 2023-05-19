@@ -39,13 +39,16 @@ body {
 
 .container {
   width: 1158px;
-  display: flex;
+  /* display: flex; */
   align-self: center;
   justify-content: center;
   justify-self: center;
   margin-left: auto;
   margin-right: auto;
   background-color: aqua;
+}
+header {
+  display: flex;
 }
 /* Логотип */
 .logo-nav.link {
@@ -193,11 +196,21 @@ nav .site-nav {
   text-transform: capitalize;
   color: #2e2f42;
 }
+.doing-list {
+  margin-top: 72px;
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  gap: 24px;
+  justify-content: space-around;
+}
 /* Команда */
 .team {
   background: #f4f4fd;
 }
 .team-title {
+  padding-top: 120px;
+
   font-style: normal;
   text-align: center;
   font-weight: 700;
@@ -206,6 +219,15 @@ nav .site-nav {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+}
+.team > .list {
+  margin-top: 72px;
+  display: flex;
+  gap: 24px;
+  padding-left: 0;
+  padding-right: 0;
+  justify-content: space-around;
+  padding-bottom: 120px;
 }
 .team-list-title {
   font-style: normal;
@@ -229,6 +251,8 @@ nav .site-nav {
 
 /* Підвал */
 .footer {
+  /* display: flex; */
+
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
