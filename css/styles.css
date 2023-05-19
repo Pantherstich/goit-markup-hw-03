@@ -20,10 +20,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  margin: 0;
-}
-p {
+h6,
+p,
+ul {
   margin: 0;
 }
 
@@ -32,6 +31,7 @@ p {
   color: var(--accent-color);
 }
 body {
+  margin: 0;
   color: #434455;
   background-color: #fff;
   font-family: 'Roboto', sans-serif;
@@ -41,13 +41,18 @@ body {
   width: 1158px;
   /* display: flex; */
   align-self: center;
-  justify-content: center;
-  justify-self: center;
   margin-left: auto;
   margin-right: auto;
-  background-color: aqua;
+  background-color: rgb(209, 84, 151);
 }
-header {
+header{
+  /* vertical-align: middle; */
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 72px;
+}
+header .container{
+  align-items: center;
   display: flex;
 }
 /* Логотип */
@@ -65,6 +70,7 @@ header {
 }
 .logo-web {
   color: #2e2f42;
+  margin-bottom: 18px;
 }
 .logo-nav .link {
   justify-self: center;
@@ -153,7 +159,6 @@ nav .site-nav {
 
 /* ПРО */
 .about {
-  background-color: aqua;
   margin-top: 120px;
 }
 .about-list {
@@ -251,8 +256,9 @@ nav .site-nav {
 
 /* Підвал */
 .footer {
+  /* padding-top: 100px; */
   /* display: flex; */
-
+  height: 322px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -261,6 +267,10 @@ nav .site-nav {
   color: #f4f4fd;
   background-color: var(--heading-text-color);
 }
+.footer{
+  padding-top: 100px;
+}
+
 .logo-footer {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
