@@ -38,7 +38,7 @@ body {
 }
 
 .container {
-  width: 1158px;
+  width: 1128px;
   /* display: flex; */
   align-self: center;
   margin-left: auto;
@@ -293,10 +293,15 @@ nav .site-nav {
   display: flex;
 } */
 .button-section .container {
+  margin-top: 96px;
   display: flex;
+  gap: 24px;
   padding-left: 0;
+  justify-content: center;
 }
 .button {
+  border: 1px solid #e7e9fc;
+  padding: 12px 24px;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -305,18 +310,26 @@ nav .site-nav {
   letter-spacing: 0.04em;
   color: #4d5ae5;
   background-color: #f4f4fd;
+  border-radius: 4px;
+  /* height: 48px; */
+  /* vertical-align: center; */
 }
 .button:hover,
 .button:focus {
+  border: 1px solid var(--accent-color);
   background-color: var(--accent-color);
   color: #fff;
   cursor: pointer;
 }
 /* Галерея */
+.gallery {
+  padding-bottom: 120px;
+}
 .gallery-title {
   display: none;
 }
 .gallery .container {
+  margin-top: 72px;
   padding-left: 0;
 
   margin-left: 0;
@@ -327,6 +340,7 @@ nav .site-nav {
   flex-wrap: wrap;
 }
 .gallery-list-title {
+  margin-top: 32px;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -335,10 +349,21 @@ nav .site-nav {
   color: #2e2f42;
 }
 .gallery-list-item {
+  margin-top: 8px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+.foto-flex:nth-child(n-3) {
+  margin-bottom: 48px;
+}
+.foto-flex p {
+  margin-left: 18px;
+}
+.foto-flex h2 {
+  margin-left: 18px;
 }
