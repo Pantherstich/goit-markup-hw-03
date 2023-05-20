@@ -43,15 +43,15 @@ body {
   align-self: center;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgb(209, 84, 151);
+  /* background-color: rgb(209, 84, 151); */
 }
-header{
-  margin-top: auto;
+header {
   margin-bottom: auto;
   height: 72px;
+  align-items: center;
 }
-header .container{
-  
+header > .container {
+  padding-top: 25px;
   align-items: center;
   display: flex;
 }
@@ -212,10 +212,10 @@ nav .site-nav {
 /* Команда */
 .team {
   background: #f4f4fd;
+  margin-top: 120px;
 }
 .team-title {
   padding-top: 120px;
-
   font-style: normal;
   text-align: center;
   font-weight: 700;
@@ -256,8 +256,6 @@ nav .site-nav {
 
 /* Підвал */
 .footer {
-  /* padding-top: 100px; */
-  /* display: flex; */
   height: 322px;
   font-style: normal;
   font-weight: 400;
@@ -267,7 +265,11 @@ nav .site-nav {
   color: #f4f4fd;
   background-color: var(--heading-text-color);
 }
-.footer{
+.footer > .container p {
+  padding-top: 18px;
+  width: 264px;
+}
+.footer > .container {
   padding-top: 100px;
 }
 
@@ -285,6 +287,15 @@ nav .site-nav {
   color: #f4f4fd;
 }
 
+/* Portfolio */
+/* 
+.image .container {
+  display: flex;
+} */
+.button-section .container {
+  display: flex;
+  padding-left: 0;
+}
 .button {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -304,6 +315,16 @@ nav .site-nav {
 /* Галерея */
 .gallery-title {
   display: none;
+}
+.gallery .container {
+  padding-left: 0;
+
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  width: 1128px;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 .gallery-list-title {
   font-style: normal;
