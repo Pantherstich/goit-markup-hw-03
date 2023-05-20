@@ -12,7 +12,8 @@ html {
   box-sizing: inherit;
 }
 h1,
-h2 .link {
+h2,
+.link {
   text-decoration: none;
 }
 h1,
@@ -331,7 +332,6 @@ nav .site-nav {
 .gallery .container {
   margin-top: 72px;
   padding-left: 0;
-
   margin-left: 0;
   margin-right: 0;
   display: flex;
