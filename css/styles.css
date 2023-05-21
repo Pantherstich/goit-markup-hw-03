@@ -43,7 +43,7 @@ body {
 
 .container {
   width: 1158px;
-  display: flex;
+  /* display: flex; */
   margin: 0 auto;
   padding: 0 15px 0 15px;
 }
@@ -56,6 +56,7 @@ body {
 }
 
 .header-flex {
+  display: flex;
   padding-top: 25px;
   align-items: center;
   /* padding: 0 15px; */
@@ -124,9 +125,7 @@ body {
   padding: 188px 0;
   background-color: #2e2f42;
 }
-.hero > .container {
-  flex-direction: column;
-}
+
 .hero-heading {
   margin-left: auto;
   margin-right: auto;
@@ -142,6 +141,7 @@ body {
   padding-bottom: 20px;
 }
 .order-button {
+  display: block;
   height: 56px;
   min-width: 169px;
   margin-top: 48px;
@@ -237,9 +237,7 @@ body {
   padding: 120px 0;
   background: #f4f4fd;
 }
-.team > .container {
-  flex-direction: column;
-}
+
 .team-title {
   margin-bottom: 72px;
   font-style: normal;
@@ -252,8 +250,8 @@ body {
   color: #2e2f42;
 }
 .team-items {
-  margin-top: 72px;
   display: flex;
+  margin-top: 72px;
   gap: 34px;
   padding-left: 0;
   padding-right: 0;
@@ -300,9 +298,6 @@ body {
   color: #f4f4fd;
   background-color: var(--heading-text-color);
 }
-.footer-container {
-  flex-direction: column;
-}
 
 .logo-footer {
   font-family: 'Raleway', sans-serif;
@@ -324,10 +319,7 @@ body {
 }
 
 /* Portfolio */
-/* 
-.image .container {
-  display: flex;
-} */
+
 .gallery-flex {
   flex-direction: column;
 }
