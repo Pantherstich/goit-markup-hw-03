@@ -168,7 +168,8 @@ body {
   padding: 120px 0;
 }
 .visually-hidden {
-  display: none;
+  position: fixed;
+  transform: scale(0);
 }
 .about-list {
   padding-left: 0;
