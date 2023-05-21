@@ -43,7 +43,7 @@ body {
 
 .container {
   width: 1158px;
-  padding: 0 15px;
+  padding: 0 15px 0 15px;
   display: flex;
   margin: 0 auto;
 }
@@ -168,14 +168,15 @@ header > .container {
 .about {
   padding: 120px 0;
 }
-.about-item {
-  flex-basis: calc((100% - 3 * 24px) / 4);
-}
+
 .about-list {
   padding-left: 0;
   padding-right: 0;
   display: flex;
-  gap: 40px;
+  gap: 24px;
+}
+.about-item {
+  width: calc((100% - 72px) / 4);
 }
 .about-title {
   display: none;
@@ -268,7 +269,7 @@ header > .container {
   color: #2e2f42;
 }
 .team-list {
-  flex-basis: calc((100% - 72px) / 4);
+  width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
   background-color: #fff;
 }
@@ -287,6 +288,7 @@ header > .container {
 
 /* Підвал */
 .footer {
+  padding: 100px 0;
   height: 322px;
   font-style: normal;
   font-weight: 400;
@@ -296,15 +298,12 @@ header > .container {
   color: #f4f4fd;
   background-color: var(--heading-text-color);
 }
-.footer > .container p {
-  padding-top: 18px;
-  width: 264px;
-}
-.footer > .container {
-  padding-top: 100px;
+.footer-container {
+  flex-direction: column;
 }
 
 .logo-footer {
+  display: block;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -313,9 +312,13 @@ header > .container {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-bottom: 16px;
 }
 .logo-footer-web {
   color: #f4f4fd;
+}
+.footer-text {
+  max-width: 264px;
 }
 
 /* Portfolio */
@@ -323,7 +326,11 @@ header > .container {
 .image .container {
   display: flex;
 } */
-.button-section .container {
+.gallery-flex {
+  flex-direction: column;
+}
+.image-filter-list {
+  margin-bottom: 72px;
   margin-top: 96px;
   display: flex;
   gap: 24px;
@@ -339,7 +346,7 @@ header > .container {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #4d5ae5;
+  color: var(--accent-color);
   background-color: #f4f4fd;
   border-radius: 4px;
   /* height: 48px; */
@@ -347,7 +354,7 @@ header > .container {
 }
 .button:hover,
 .button:focus {
-  border: 1px solid var(--accent-color);
+  border: 1px solid transparent;
   background-color: var(--accent-color);
   color: #fff;
   cursor: pointer;
@@ -356,21 +363,19 @@ header > .container {
 .gallery {
   padding-bottom: 120px;
 }
+.gallery-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
 .gallery-title {
   display: none;
 }
-.gallery .container {
-  margin-top: 72px;
-  padding-left: 0;
-  margin-left: 0;
-  margin-right: 0;
-  display: flex;
-  width: 1128px;
-  gap: 24px;
-  flex-wrap: wrap;
-}
+
 .gallery-list-title {
-  margin-top: 32px;
+  margin-bottom: 8px;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -387,13 +392,12 @@ header > .container {
   letter-spacing: 0.02em;
   color: #434455;
 }
+.gallery-describtion {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
 
-.foto-flex:nth-child(n-3) {
-  margin-bottom: 48px;
-}
-.foto-flex p {
-  margin-left: 18px;
-}
-.foto-flex h2 {
-  margin-left: 18px;
-}
+/* .foto-flex {
+  width: calc((100% - 48px) / 3);
+} */
