@@ -45,9 +45,10 @@ body {
   width: 1158px;
   display: flex;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .header-section {
-  padding: 0 15px;
+  /* padding: 0 15px; */
   margin-bottom: auto;
   height: 72px;
   align-items: center;
@@ -304,7 +305,6 @@ body {
 }
 
 .logo-footer {
-  display: inline-block;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -314,6 +314,7 @@ body {
   text-transform: uppercase;
   color: #4d5ae5;
   margin-bottom: 16px;
+  display: inline-block;
 }
 .logo-footer-web {
   color: #f4f4fd;
