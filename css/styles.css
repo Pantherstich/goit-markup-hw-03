@@ -43,7 +43,7 @@ body {
 
 .container {
   width: 1158px;
-  padding: 0 15px 0 15px;
+  padding: 0 15px;
   display: flex;
   margin: 0 auto;
 }
@@ -303,7 +303,7 @@ header > .container {
 }
 
 .logo-footer {
-  display: block;
+  display: inline-block;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
