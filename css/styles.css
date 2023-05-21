@@ -45,7 +45,7 @@ body {
   width: 1158px;
   display: flex;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 15px 0 15px;
 }
 .header-section {
   /* padding: 0 15px; */
@@ -254,7 +254,7 @@ body {
 .team-items {
   margin-top: 72px;
   display: flex;
-  gap: 24px;
+  gap: 34px;
   padding-left: 0;
   padding-right: 0;
   justify-content: space-around;
