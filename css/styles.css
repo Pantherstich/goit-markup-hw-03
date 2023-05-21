@@ -321,10 +321,6 @@ body {
 }
 
 /* Portfolio */
-/* 
-.image .container {
-  display: flex;
-} */
 
 .image-filter-list {
   margin-bottom: 72px;
@@ -373,8 +369,9 @@ body {
   width: calc((100% - 48px) / 3);
 }
 
-.gallery-title {
-  display: none;
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
 }
 
 .gallery-list-title {
