@@ -43,11 +43,12 @@ body {
 
 .container {
   width: 1158px;
-  padding: 0 15px;
+
   display: flex;
   margin: 0 auto;
 }
 .header-section {
+  padding: 0 15px;
   margin-bottom: auto;
   height: 72px;
   align-items: center;
