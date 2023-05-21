@@ -43,6 +43,8 @@ body {
 
 .container {
   width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 .header-section {
   /* padding: 0 15px; */
@@ -165,7 +167,9 @@ body {
 .about {
   padding: 120px 0;
 }
-
+.about-title {
+  visibility: hidden;
+}
 .about-list {
   padding-left: 0;
   padding-right: 0;
@@ -175,9 +179,7 @@ body {
 .about-item {
   width: calc((100% - 72px) / 4);
 }
-.about-title {
-  visibility: hidden;
-}
+
 .about-list-title {
   margin-bottom: 8px;
   font-style: normal;
@@ -365,6 +367,7 @@ body {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
+  padding-left: 0;
 }
 .foto-flex {
   width: calc((100% - 48px) / 3);
