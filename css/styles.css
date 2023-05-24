@@ -92,10 +92,8 @@ body {
   align-items: center;
 }
 .site-nav {
-  padding: 24px 24px;
   display: flex;
   gap: 40px;
-  margin-left: 76px;
 }
 .site-nav-item {
   padding: 24px 0;
@@ -108,7 +106,7 @@ body {
 }
 .contacts {
   margin-left: auto;
-padding: 24px 0;
+  padding: 24px 0;
 }
 .contacts .list {
   display: flex;
@@ -132,7 +130,6 @@ padding: 24px 0;
 .hero-heading {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 188px;
   max-width: 496px;
   font-style: normal;
   text-align: center;
@@ -141,13 +138,12 @@ padding: 24px 0;
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: #ffffff;
-  padding-bottom: 20px;
+  margin-bottom: 48px;
 }
 .order-button {
   display: block;
   height: 56px;
   min-width: 169px;
-  margin-top: 48px;
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
@@ -272,7 +268,6 @@ padding: 24px 0;
   padding-left: 0;
   padding-right: 0;
   justify-content: space-around;
-  padding-bottom: 120px;
 }
 .team-list-title {
   margin-bottom: 8px;
@@ -341,7 +336,6 @@ padding: 24px 0;
 
 .image-filter-list {
   margin-bottom: 72px;
-  margin-top: 96px;
   display: flex;
   gap: 24px;
   padding-left: 0;
